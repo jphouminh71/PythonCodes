@@ -1,0 +1,227 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 10 14:13:12 2017
+
+@author: xtrem
+"""
+import random
+mile=0
+money=1600
+def get_info():
+    player = input() # ask user name
+    comp_1= #ask companion name
+    comp_2= #ask companion name
+    comp_3= #ask companion name
+    comp_4= #ask companion name
+    initial_time=input()#ask for starting date/time
+
+
+def distance(mile):
+    # Travel = random distance in range 70-140 miles
+    return travel
+
+def store(money):
+    # Explain what the user can buy
+    # call functions of the four categories
+    bill=0
+
+def oxen(money,bill):
+    yoke=input()#Ask user how many oxen they want(must be at least 6, each yoke contains 2 oxen)
+    if yoke <3:
+        yoke=input()#ask again
+    if yoke >3 and yoke <=5:
+        oxen_price=yoke * 40
+        bill=oxen_price
+    if yoke >5:
+        yoke=input()#ask again
+    money=money - bill
+    return bill
+    
+def food(money,bill):
+    #Recommend amount of food
+    cost_of_food=0
+    lbs_of_food=input()#ask user how many lbs of food they want to buy
+    cost_of_food=lbs_of_food * 0.5
+    bill=bill + cost_of_food
+    money=money-bill
+    return bill
+
+def bullets(money, bill):
+    bullets=input()#ask user how many boxes of bullets they want(contains 20 bullets each)
+    cost_of_bullets=bullets * 2
+    bill=bill + cost_of_bullets
+    money=money - bill
+    return bill
+
+def miscellaneous_parts(money, bill)
+    wagon_parts=input()#ask user how many parts they want
+    cost_of_parts=wagon_parts * 10
+    med_kit=input()# ask user how many med kits they want
+    cost_of_kit=med_kit * 15
+    bill=bill + cost_of_parts + cost_of_kit
+    money=money - bill
+    return bill
+
+def status_update(time,miles,money,food,bullets,landmark):
+    #print the current values supplies,distances,and time
+
+def rest(time,food,health):
+    #update time to add between 1 and 3 days
+    #food= food - (number of players * 3)
+    #if health is low, reset to full
+
+def continue_trail(time,miles,food):
+    #time=call time function
+    #food=food-(number of playsers *3)
+    #call distance function
+
+def hunt(time,bullets,food,health):
+    #call time fuction
+    #num=randint(0,100)
+    #for animal in num:
+        #if num <=50:
+            #animal=rabbit
+        #num=randint(0,100)
+        # if num<=25:
+            #animal=fox
+    #repeat loop for each animal
+    #ask user if they want to hunt the animal
+    #if yes and bullets <10, hunt unsuccessful
+    #if yes and bullets >10, hunt successful
+    #if hunt successful:
+        #bullets=bullets - number per animal
+        #food=food + amount per animal
+    #ask user how well they want to eat
+    #set rate of food loss per day
+    #if player is sick, health restored to full
+
+def quit_game():
+    #Print message to end game
+    
+def take_turn(time,miles,money,food,bullets,health,landmark):
+    #ask user what they want to do in their turn
+    #call the appropriate function based on player input
+    #call misfortune function
+    #call the raider function
+
+def misfortune(#set of supplies):
+    num_1=rand.int(0,100):
+        if num_1<=30:
+            misfortune=rand.int()
+            #use random integer to determine what misfortune occurs
+            #call function of misfortune
+
+def sick(#players,health):
+    sickness=rand.int()
+    #if sickness=__, report typhoid,cholera,diarrhea,measles,dysentary,or fever
+    #if player gets sick, health-50
+    #if health=0, player dies
+    #if not resting, health+10 each day
+    #if med kit is used, health+25 each day
+
+def oxen_death(oxen):
+    oxen=oxen-1
+    if oxen==0:
+        #call game over function
+
+def thief(food):
+    num-rand.int(15,25)
+    food=food-num
+    return food
+
+def wagon_break(wagon_parts):
+    num=rand.int(0,30):
+        #if num =___, report which part breaks
+        #if wagon parts:
+            #time+1
+            #wagon_parts-1
+            #health restores at normal rate
+            #if no wagon parts:
+                #call game over function
+
+def bad_weather(food,health):
+    num=randint(0,5)
+    #if num=0, report heavy rain, day=day+1
+    #if num=1, report storm, day=day+3
+    #if num=2, report hail, day=day+1
+    #if num=3, report blizzard, day=day+3
+    #if num=4,report hurricane, day=day+5
+    #health restores
+    
+def raider_attack(miles,#other supplies):
+    attack=((((miles/100)-4))**2)+72)/((((miles/100)-4))**2)+12)-1
+    #if attack, ask user what they want to do
+    #If run:
+        #ox-1
+        #food-10
+        #wagon_parts-1
+    #if attack:
+        #call puzzle function
+        #if win/pass puzzle:
+            #food+50
+            #bullets+50
+        #if lose/fail puzzle:
+            #reduce=cash*.25
+            #cash=cash-reduce
+            #bullets-50
+    #if surrender:
+        #reduce=cash*.25
+        #cash=cash-reduce
+        
+def puzzle():
+    puzzle_num=randint(1,10)
+    #ask user to guess num
+    #if correct, puzzle solved
+    #if incorrect, ask again
+    #if still incorrect, ask again
+    #if not correct, puzzle failed
+    
+def milestones(miles):
+    #open the milestones file in read mode
+    #for line in file:
+        #split line
+        #if line=length of 3:
+            #print current mileage
+            #print distance to next river
+            #mile+=distance
+            #ask user to rest or cross
+            #if river >3, ferry==true
+            #if ferry==true:
+                #money-5
+                #call continue function
+        #if line=length of 2:
+            #print current mileage
+            #print distance to next fort
+            #mile+=distance
+            #ask user to rest, visit store, or continue, call function
+        #if line=length of 1:
+            #print current mileage
+            #print distance to next landmark
+            #mile+=distance
+            #ask user to rest or continue, call appropriate function
+            
+def game_over(miles,#supplies,misfortune):
+    #if mile=2040 and time<number of days:
+        #print message congratulating player on winning the game
+    #if food=0:
+        #print game over message
+    #if oxen=0:
+        #print game over message
+    #if misfortune=broken wagon and wagon_parts=0:
+        #print game over message
+    #if player_health=0:
+        #print game over message
+        
+def main(#miles, time, supplies, health, etc):
+    #print game start messages
+    #call store function
+    #while player turn:
+        #call take turn function
+        #other functions called in take turn function based on player choice
+        #if supplies=0 or player health=0 or wagon broken:
+            #call game over function
+        #if miles=2040 and time<number of days:
+            #call game over function
+    
+            
+            
